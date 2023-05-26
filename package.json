@@ -1,0 +1,12 @@
+{
+	"name": "hospital-website_html-sass-css-js_may2023",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"watch": "sass --watch scss:css"
+	},
+	"keywords": [],
+	"author": "Liliana Milano",
+	"license": "ISC"
+}

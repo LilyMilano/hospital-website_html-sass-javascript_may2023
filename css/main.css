@@ -157,9 +157,22 @@ nav h5 {
     align-items: flex-start;
     gap: 0;
     display: none;
+    perspective: 300px;
   }
   nav .container ul li {
     width: 100%;
+    opacity: 0;
+    animation: flipNavItem 300ms ease forwards;
+    transform-origin: top;
+  }
+  @keyframes flipNavItem {
+    0% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
   }
   nav .container ul li a {
     color: #ffffff;

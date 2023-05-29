@@ -59,9 +59,23 @@ nav {
 				align-items: flex-start;
 				gap: 0;
 				display: none;
+				perspective: 300px;
 
 				li {
 					width: 100%;
+					opacity: 0;
+					animation: flipNavItem 300ms ease forwards;
+					transform-origin: top;
+
+					@keyframes flipNavItem {
+						0% {
+							transform: rotateX(90deg);
+						}
+						100% {
+							transform: rotateX(0deg);
+							opacity: 1;
+						}
+					}
 
 					a {
 						color: $white-color;

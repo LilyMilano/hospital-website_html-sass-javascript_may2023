@@ -263,7 +263,6 @@ header .container .header__content p {
 #services {
   margin: 0;
   padding-top: 90px;
-  padding-bottom: 20px;
 }
 #services .container {
   display: grid;
@@ -319,6 +318,95 @@ header .container .header__content p {
   #services .container article div h4 {
     margin-bottom: 0.8rem;
   }
+}
+#specialists {
+  margin-top: 0;
+  padding-top: 85px;
+}
+#specialists .container {
+  width: 68%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+#specialists .container article {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 1.5rem rgba(12, 3, 27, 0.1);
+  position: relative;
+  transition: all 700ms ease;
+}
+#specialists .container article:hover {
+  box-shadow: none;
+}
+#specialists .container article:hover .specialist__image::before {
+  left: 0;
+  border-radius: 1rem;
+}
+#specialists .container article:hover .specialist__socials,
+#specialists .container article:hover .specialist__whatsapp {
+  opacity: 1;
+  visibility: visible;
+}
+#specialists .container article .specialist__image {
+  height: 20rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#specialists .container article .specialist__image::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: -100%;
+  background: linear-gradient(135deg, rgba(72, 12, 168, 0.8), rgba(76, 201, 240, 0.8));
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+#specialists .container article .specialist__details {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+#specialists .container article .specialist__socials {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s 400ms ease;
+}
+#specialists .container article .specialist__socials a {
+  background: #ffffff;
+  color: #480ca8;
+  padding: 0.4rem;
+  display: flex;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  transition: all 400ms ease;
+}
+#specialists .container article .specialist__socials a:hover {
+  background: #480ca8;
+  color: #ffffff;
+}
+#specialists .container article .specialist__whatsapp {
+  background: #54eb72;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30%;
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s 400ms ease;
 }
 
 /*# sourceMappingURL=main.css.map */

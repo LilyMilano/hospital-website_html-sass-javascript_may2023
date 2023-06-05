@@ -2,7 +2,10 @@
 	width: $container-lg;
 
 	.swiper-wrapper {
-		article {
+        // brings swiper-pagination down
+		margin-bottom: 4rem;
+
+		.swiper-slide {
 			@include gradientBackground;
 			padding: 1.5rem 2rem;
 			border-radius: 1rem;
@@ -27,13 +30,16 @@
 			}
 		}
 	}
+	.swiper-pagination-bullet {
+		background: $primary-color;
+	}
 }
 
 /***** MEDIA QUERIES (SMALL DEVICES) *****/
 @media screen and (max-width: 600px) {
 	.swiper {
 		.swiper-wrapper {
-			article {
+			.swiper-slide {
 				padding: 1.5rem;
 			}
 		}

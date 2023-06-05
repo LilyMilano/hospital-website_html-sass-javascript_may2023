@@ -8,10 +8,20 @@ openNavBtn.addEventListener('click', () => {
 	closeNavBtn.style.display = 'inline-block';
 });
 
-const closeNav = ()=> {
-    navItems.style.display = 'none';
+const closeNav = () => {
+	navItems.style.display = 'none';
 	openNavBtn.style.display = 'inline-block';
 	closeNavBtn.style.display = 'none';
-}
+};
 
 closeNavBtn.addEventListener('click', closeNav);
+
+// Testimonials Section (swiper js)
+var swiper = new Swiper('.mySwiper', {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});

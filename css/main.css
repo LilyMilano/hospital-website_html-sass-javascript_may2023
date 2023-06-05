@@ -421,10 +421,10 @@ header .container .header__content p {
     grid-template-columns: 1fr;
   }
 }
-#testimonials {
+.swiper {
   width: 82%;
 }
-#testimonials .container article {
+.swiper .swiper-wrapper article {
   background: linear-gradient(135deg, #480ca8, #4cc9f0);
   color: #ffffff;
   padding: 1.5rem 2rem;
@@ -432,22 +432,22 @@ header .container .header__content p {
   cursor: default;
   font-size: 0.9rem;
 }
-#testimonials .container article h1,
-#testimonials .container article h2,
-#testimonials .container article h3,
-#testimonials .container article h4,
-#testimonials .container article h5 {
+.swiper .swiper-wrapper article h1,
+.swiper .swiper-wrapper article h2,
+.swiper .swiper-wrapper article h3,
+.swiper .swiper-wrapper article h4,
+.swiper .swiper-wrapper article h5 {
   color: #ffffff;
 }
-#testimonials .container article p {
+.swiper .swiper-wrapper article p {
   margin-bottom: 1.5rem;
 }
-#testimonials .container article .patient {
+.swiper .swiper-wrapper article .patient {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-#testimonials .container article .patient .avatar {
+.swiper .swiper-wrapper article .patient .avatar {
   width: 2.5rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -456,7 +456,7 @@ header .container .header__content p {
 
 /***** MEDIA QUERIES (SMALL DEVICES) *****/
 @media screen and (max-width: 600px) {
-  #testimonials .container article {
+  .swiper .swiper-wrapper article {
     padding: 1.5rem;
   }
 }

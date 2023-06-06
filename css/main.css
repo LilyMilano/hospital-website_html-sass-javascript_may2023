@@ -466,5 +466,32 @@ header .container .header__content p {
     padding: 1.5rem;
   }
 }
+#appointment .container {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 6%;
+}
+#appointment .container .info p {
+  margin: 0.5rem 0 2rem;
+}
+#appointment .container .info article {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#appointment .container .info article small {
+  margin-top: 0.4rem;
+  display: block;
+  text-align: justify;
+}
+#appointment .container .info article .info__icon {
+  background: #f72585;
+  color: #ffffff;
+  padding: 0.8rem;
+  height: fit-content;
+  display: flex;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=main.css.map */

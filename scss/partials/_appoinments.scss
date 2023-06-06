@@ -5,8 +5,13 @@
 		gap: 6%;
 
 		.info {
+			h2 {
+				margin-top: -13rem;
+				text-align: center;
+			}
 			p {
 				margin: 0.5rem 0 2rem;
+				text-align: center;
 			}
 
 			article {
@@ -28,6 +33,62 @@
 					display: flex;
 					border-radius: 50%;
 					font-size: 1.2rem;
+				}
+			}
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 1.4rem;
+
+			.form__group {
+				label {
+					font-size: 0.85rem;
+					margin-bottom: 0.4rem;
+					display: inline-block;
+					font-weight: 600;
+				}
+
+				input,
+				textarea,
+				select {
+					background: $white-color;
+					padding: 0.85rem 1rem;
+					display: block;
+					width: 100%;
+					border-radius: 0.4rem;
+					resize: none;
+					appearance: none;
+				}
+			}
+		}
+	}
+}
+
+/***** MEDIA QUERIES (MEDIUM DEVICES) *****/
+@media screen and (max-width: 1024px) {
+	#appointment {
+		.container {
+			.info {
+				h2 {
+					margin-top: -3rem;
+				}
+			}
+		}
+	}
+}
+
+/***** MEDIA QUERIES (SMALL DEVICES) *****/
+@media screen and (max-width: 600px) {
+	#appointment {
+		.container {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+
+			.info {
+				h2 {
+					margin-top: 0rem;
 				}
 			}
 		}

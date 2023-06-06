@@ -471,8 +471,13 @@ header .container .header__content p {
   grid-template-columns: 47% 47%;
   gap: 6%;
 }
+#appointment .container .info h2 {
+  margin-top: -13rem;
+  text-align: center;
+}
 #appointment .container .info p {
   margin: 0.5rem 0 2rem;
+  text-align: center;
 }
 #appointment .container .info article {
   display: flex;
@@ -492,6 +497,45 @@ header .container .header__content p {
   display: flex;
   border-radius: 50%;
   font-size: 1.2rem;
+}
+#appointment .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+#appointment .container form .form__group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+#appointment .container form .form__group input,
+#appointment .container form .form__group textarea,
+#appointment .container form .form__group select {
+  background: #ffffff;
+  padding: 0.85rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.4rem;
+  resize: none;
+  appearance: none;
+}
+
+/***** MEDIA QUERIES (MEDIUM DEVICES) *****/
+@media screen and (max-width: 1024px) {
+  #appointment .container .info h2 {
+    margin-top: -3rem;
+  }
+}
+/***** MEDIA QUERIES (SMALL DEVICES) *****/
+@media screen and (max-width: 600px) {
+  #appointment .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #appointment .container .info h2 {
+    margin-top: 0rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

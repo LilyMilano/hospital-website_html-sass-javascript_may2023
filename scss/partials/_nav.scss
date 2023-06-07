@@ -7,38 +7,67 @@ nav {
 	place-items: center;
 	@include gradientBackground;
 	box-shadow: 0 1rem 1rem rgba($black-color, 0.1);
-}
 
-.container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	/* navbar styles on scroll using JS */
+	&.window-scroll {
+		background: $white-color;
+		.container {
+			button {
+				color: $black-color;
+			}
+			a {
+				color: $black-color;
 
-	ul {
+				& > h3 {
+					color: $black-color;
+				}
+
+				&.btn {
+					color: $white-color;
+				}
+			}
+		}
+	}
+
+	.container {
 		display: flex;
-		gap: 3rem;
+		justify-content: space-between;
 		align-items: center;
-	}
 
-	// only needed in medium and small devices
-	button {
-		display: none;
-	}
+		ul {
+			display: flex;
+			gap: 3rem;
+			align-items: center;
+		}
 
-	a {
-		color: $white-color;
-		font-weight: 400;
-		font-size: 0.9rem;
-	}
+		// only needed in medium and small devices
+		button {
+			display: none;
+		}
 
-	.nav__logo h3 {
-		color: $white-color;
+		a {
+			color: $white-color;
+			font-weight: 400;
+			font-size: 0.9rem;
+		}
+
+		.nav__logo h3 {
+			color: $white-color;
+		}
 	}
 }
 
 /***** MEDIA QUERIES (MEDIUM DEVICES) *****/
 @media screen and (max-width: 1024px) {
 	nav {
+		/* navbar styles on scroll using JS */
+		&.window-scroll {
+			.container {
+				a {
+					color: $white-color;
+				}
+			}
+		}
 		.container {
 			button {
 				display: inline-block;

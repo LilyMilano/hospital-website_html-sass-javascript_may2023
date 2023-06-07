@@ -6,7 +6,6 @@
 
 		.info {
 			h2 {
-				margin-top: -13rem;
 				text-align: center;
 			}
 			p {
@@ -60,19 +59,6 @@
 					border-radius: 0.4rem;
 					resize: none;
 					appearance: none;
-				}
-			}
-		}
-	}
-}
-
-/***** MEDIA QUERIES (MEDIUM DEVICES) *****/
-@media screen and (max-width: 1024px) {
-	#appointment {
-		.container {
-			.info {
-				h2 {
-					margin-top: -3rem;
 				}
 			}
 		}

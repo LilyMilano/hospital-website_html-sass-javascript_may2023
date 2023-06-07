@@ -25,6 +25,13 @@ if (window.innerWidth < 1024) {
 	});
 }
 
+// Change navbar styles on scroll
+window.addEventListener('scroll', () => {
+	document
+		.querySelector('nav')
+		.classList.toggle('window-scroll', window.scrollY > 0);
+});
+
 // Testimonials Section (swiper js)
 var swiper = new Swiper('.mySwiper', {
 	slidesPerView: 1,
